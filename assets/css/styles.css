@@ -70,16 +70,22 @@ a{
     padding: var(--gap);
 }
 
-
-.intro-flex-content{
+.intro-flex-container{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-content: center;
 }
-.intro-text{
-    margin-right: 2.0rem;
-}   
 
+.intro-text{
+    display: flex;
+    flex-direction: column;
+}
+.intro-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
 .section{
     min-height: 100vh;
 }
