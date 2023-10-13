@@ -196,6 +196,7 @@
                 <img src="/home/joaop/Documentos/Pagina_aula/assets/img/css.svg" alt="imagem de js,html e css">
             </div>
             <div class="contact-form">
+                <form action="">
                 <fieldset class="form-grid">
                     <legend>Contact Us</legend>
                     <div class="form-group">
@@ -220,14 +221,19 @@
                         <label for="message">
                             Message
                         </label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" >
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required >
 
                         </textarea>
                     </div>
-                    <div class="form-group full-width">
-                        <button type="submit">Send Message</button>
+                    <div class="form-group">
+                        <button class="send-button" type="submit">Send Message</button>
+                    </div>
+
+                    <div class="form-group">
+                        <button class="send-clear" type="reset">Send Clear</button>
                     </div>
                 </fieldset>
+            </form>
             </div>
         </div>
         </section>
