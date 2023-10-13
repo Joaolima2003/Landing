@@ -1,7 +1,7 @@
 :root{
     --primary-color: #0A1128;
     --white-color: white; 
-    --light-gray-color: #EEEE; 
+    --light-gray-color: gray; 
     --gap: 3rem;
     --secondary-color: crimson;
 }
@@ -13,6 +13,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
  
 body{
@@ -26,7 +27,7 @@ h1{
 }
 
 h2{
-    font-size: 5.5rem;
+    font-size: 6.0rem;
     text-transform: uppercase;
 }
 
@@ -51,6 +52,38 @@ a{
     text-decoration: none;
 }
 
+p{
+    font-size: 2.5rem;
+    margin-bottom: 3.5rem;
+}
+.table-responsive{
+    overflow: hidden;
+    overflow-x: auto;
+}
+table{
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption{
+    text-align: left;
+    margin-bottom: 1.7rem;
+    font-style: italic;
+    font-size: 2rem;
+}
+table td, table th{
+    padding: 0.6rem;
+    border: 0.1rem solid var(--light-gray-color);
+    text-align: left;
+}
+table th{
+    background: rgb(175, 173, 173, 0.2);
+}
+
+tfoot td{
+    background: rgb(175, 173, 173, 0.2);
+}
 .main-bg{
     background-image: url('/home/joaop/Documentos/Pagina_aula/assets/img/main.svg');
     background-position: center center;
@@ -61,7 +94,7 @@ a{
 
 .white-bg{
    background: var(--white-color);
-   color: black;
+   color: var(--primary-color);
 }
 
 .main-content{
@@ -69,27 +102,34 @@ a{
     margin: 0 auto;
     padding: var(--gap);
 }
-
-.intro-flex-container{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-
-.intro-text{
-    display: flex;
-    flex-direction: column;
-}
-.intro-img{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    
-}
 .section{
     min-height: 100vh;
 }
 
+.intro-content{
+    display: grid;
+    position: relative;
+    top: 4rem;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.intro-elementos, .intro-img{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.intro-elementos, h2{
+    font-size: 6.0rem;
+    margin-bottom: 5.0rem;
+}
+
+.intro-img img{
+    max-width: 100%;
+    height: auto;
+}
 .spacing-menu{
     height: 3.0rem;
 }
@@ -103,11 +143,12 @@ a{
 
 .menu{
     position: fixed;
+    z-index: 1;
     top: 0;
     right: 0;
     left: 0;
     width: 100%;
-    border-bottom: 0.1 solid black;
+    border-bottom: 0.1rem solid rgb(180, 180, 180, 0.7);
 }
 
 .menu h1{
@@ -148,7 +189,66 @@ a{
     left: 25%;
   }
 
-  img{
-    width: 6.0rem;
-    height: 6.0rem;
-  }
+.top3-content{
+    min-height: 100vh;
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+}
+.grid-one{
+    overflow-x: hidden;
+}
+.grid-one-content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.grid-main-heading{
+    margin-top: 3rem;
+}
+.grid-description{
+    padding-bottom: 2rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.grid h3{
+    font-size: 3rem;
+    position: relative;
+    padding-left: 8rem;
+    padding-bottom: 2rem;
+}
+
+.grid h3::before{
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -2rem;
+    left: 2rem;
+    transform: rotate(5deg);
+}
+
+.gallery-img{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-img img{
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover{
+    transform: translate(-3%,3%) scale(1.2) rotate(5deg); 
+}

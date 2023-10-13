@@ -9,24 +9,14 @@
 <body class="main-bg"> <!--Aside para rolar pela Página-->
     <aside class="menu white-bg">
         <div class="menu-content">
-        <h1><a href="#">Logo</a></h1>
+        <h1><a href="#home">Logo</a></h1>
         <nav>
-            <ul>
-                <li>
-                    <a href="#">Intro</a>
-                </li>
-                <li>
-                    <a href="#">Top 3</a>
-                </li>
-                <li>
-                    <a href="#">Gallery</a>
-                </li>
-                <li>
-                    <a href="#">Work</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+            <ul>  
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#grid-one">Grid-one</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#grid-two">Grid-two</a></li>
+                <li><a href="#table">Table</a></li>
             </ul>
         </nav>
         </div>
@@ -34,27 +24,165 @@
     <!--Fim Menu-->
     <!--Criação de seções da Landing Page-->
     <div class="spacing-menu"></div>
-    <section class="intro main-bg section">
-        <div class="main-content intro-content">
-            <div class="intro-flex-container">
-                <div class="intro-text">
-                    <h2>Bem Vindo ao Meu Primeiro Site</h2>
-                    <p>
-                        Olá, meu nome é João Paulo e estou tendo uma primeira experiência aprendendo a usar os conhecimentos que adquiri até o momento, usando html e css Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nulla reprehenderit. Inventore cupiditate vero molestias quae exercitationem soluta ducimus porro debitis quas accusantium, dolores expedita error totam consequatur quam et?
-                    </p>
-                </div>
-                <div class="intro-img">
-                    <img src="caminho_da_imagem.jpg" alt="Imagem">
-                </div>
+<section id="home" class="main-bg section">
+    <div class="main-content intro-content">
+        <div class="intro-elementos">
+            <h2>Bem vindos ao inicio do meu primeiro site</h2>
+            <p>Essa parte da página é introdutória e foi usada flexbox e grid para organização dos items, espero que curtam está num estilo de Landing-Page e com isso vamos caminhar na página usando os items do menu certo?</p>
+        </div>       
+        <div class="intro-img">
+            <img src="/home/joaop/Documentos/Pagina_aula/assets/img/js.svg" alt="imagem de js,html e css">
+        </div>
+    </div>
+    </section>    
+    <section id="intro" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>
+                Second Section
+            </h2>
+            <p>
+                The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machines performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.
+            </p>
+            <p>
+                Well start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.
+            </p>
+            <p>
+                Well then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur, and discuss various updater problems we had to deal with. Well conclude with the release and an overview of various other improvements that are in the pipeline
+            </p>
+        </div>
+    </section>
+    <section id="grid-one" class="grid-one main-bg section">
+        <div class="grid-one-content main-content">
+            <h2 class="grid-main-heading">My Grid</h2>
+            <p class="grid-description">Descrição</p>
+            <div class="grid">
+            <article>
+                <h3>First</h3>    
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptates, a pariatur nihil quo obcaecati autem quia sequi aperiam necessitatibus. Explicabo doloribus perspiciatis modi odit necessitatibus ipsa amet expedita quasi.
+                </p>
+            </article>
+            <article>
+                <h3>Second</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo saepe, fuga magnam temporibus blanditiis eum iste voluptate ea neque cupiditate! Corrupti harum itaque a voluptate, rerum delectus esse laboriosam maxime?
+                </p>
+            </article>
+            <article>
+                <h3>Three</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo saepe, fuga magnam temporibus blanditiis eum iste voluptate ea neque cupiditate! Corrupti harum itaque a voluptate, rerum delectus esse laboriosam maxime?
+                </p>
+            </article>
+            </div>
+        </div> 
+    </section>
+    <section id="gallery" class="grid-one white-bg section">
+        <div class="grid-one-content main-content">
+            <h2 class="grid-main-heading">Gallery</h2>
+            <p class="grid-description">Descrição</p>
+        <div class="grid">
+            <div class="gallery-img">
+                <img src="https://source.unsplash.com/random/360x360?r=1" alt="imagens random">
+            </div>
+            <div class="gallery-img">
+                <img src="https://source.unsplash.com/random/360x360?r=2" alt="images random">
+            </div>
+            <div class="gallery-img">
+                <img src="https://source.unsplash.com/random/360x360?r=3" alt="images random">
+            </div>
+            <div class="gallery-img">
+                <img src="https://source.unsplash.com/random/360x360?r=4" alt="images random">
+            </div>
+            <div class="gallery-img">
+                <img src="https://source.unsplash.com/random/360x360?r=5" alt="images random">
+            </div>
+            <div class="gallery-img">
+                <img src="https://source.unsplash.com/random/360x360?r=6" alt="images random">
             </div>
         </div>
-    </section>    
-    <section class="white-bg section">
-        <div class="main-content">
-            <h1>Lorem</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nisi id, ut nihil, totam eos doloribus at exercitationem omnis vitae ipsum explicabo fugiat? Hic tempora quis possimus consequuntur esse dolore?
-            </p>
+        </div> 
+    </section>
+    <section id="grid-two" class="grid-one main-bg section">
+        <div class="grid-one-content main-content">
+            <h2 class="grid-main-heading">My Grid</h2>
+            <p class="grid-description">Descrição</p>
+            <div class="grid">
+            <article>
+                <h3>First</h3>    
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptates, a pariatur nihil quo obcaecati autem quia sequi aperiam necessitatibus. Explicabo doloribus perspiciatis modi odit necessitatibus ipsa amet expedita quasi.
+                </p>
+            </article>
+            <article>
+                <h3>Second</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo saepe, fuga magnam temporibus blanditiis eum iste voluptate ea neque cupiditate! Corrupti harum itaque a voluptate, rerum delectus esse laboriosam maxime?
+                </p>
+            </article>
+            <article>
+                <h3>Three</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo saepe, fuga magnam temporibus blanditiis eum iste voluptate ea neque cupiditate! Corrupti harum itaque a voluptate, rerum delectus esse laboriosam maxime?
+                </p>
+            </article>
+            </div>
+        </div> 
+    </section>
+    <section id="table" class="white-bg section">
+        <div class="main-content top3-content">
+            <section>
+            <h2>
+                Tabela
+            </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, eius voluptatum pariatur officiis ad, corrupti doloribus est debitis dolorum saepe quidem fugit, aspernatur sequi? Iste praesentium vero delectus maiores deserunt.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae sapiente debitis consectetur perferendis, quibusdam assumenda non enim neque dolore dolorum fuga ex culpa a temporibus tempore fugiat facilis minima placeat!</p>
+            </section>
+            <div class="table-responsive">
+            <table>
+                <caption>Table of Products</caption>
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Products</th>
+                    <th>Values</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Test</td>
+                    <td>Values2</td>
+                    <td>Values3</td>
+                </tr>
+                <tr>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Values2</td>
+                </tr>
+                <tr>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Values2</td>
+                </tr>
+                <tr>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Values2</td>
+                </tr>
+                <tr>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Values2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Testando footer</td>
+                </tr>
+            </tfoot>
+            </table>
         </div>
     </section>
 </body>
