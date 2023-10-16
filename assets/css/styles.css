@@ -86,7 +86,7 @@ tfoot td{
     background: rgb(175, 173, 173, 0.2);
 }
 .main-bg{
-    background-image: url('/home/joaop/Documentos/Pagina_aula/assets/img/main.svg');
+    background-image: url("../img/main.svg");
     background-position: center center;
     background-size: cover;
     color: var(--white-color);
