@@ -313,10 +313,6 @@ body .full-width{
     color: var(--primary-color);
 }
 
-.form-group .send-clear{
-    position: absolute;
-    left: 30rem;
-}
 
 footer{
     width: 100%;
