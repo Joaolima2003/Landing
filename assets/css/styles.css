@@ -32,6 +32,10 @@ h1{
     text-transform: uppercase;
 }
 
+h1 a {
+    border: 2rem solid white;
+}
+
 h2{
     font-size: 6.0rem;
     text-transform: uppercase;
@@ -324,7 +328,7 @@ footer{
 }
 
 @media (max-width: 800px) {
-    .intro-content, .grid, .intro-content{
+    .intro-content, .grid{
       grid-template-columns: 1fr;
     }
     .gallery-img{
@@ -333,6 +337,6 @@ footer{
         max-height: 100%;
     }
     .gallery-img img{
-        width: 100%;
+        width: 100%; 
     }
 }
