@@ -15,7 +15,6 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth !important;
-    scroll-behavior: smooth 1000ms;
 }
  
 body{
@@ -33,7 +32,7 @@ h1{
 }
 
 h1 a {
-    border: 2rem solid white;
+    padding: auto;
     
 }
 
