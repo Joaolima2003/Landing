@@ -195,7 +195,7 @@
                         </tr>
                     </thead>
                     <tbody id="tabela-corpo">
-                        
+
                     </tbody>
                     <tfoot>
                         <tr>
@@ -256,7 +256,6 @@
 </body>
 <script>
     function adicionarNaTabela() {
-
         var firstName = document.getElementById('first-name').value;
         var lastName = document.getElementById('last-name').value;
         var email = document.getElementById('email').value;
@@ -264,8 +263,12 @@
 
         var tabelaCorpo = document.getElementById('tabela-corpo');
 
-        var novaLinha = document.createElement('tr');
+        if (emailJaExistente(email, tabelaCorpo)) {
+            alert("Email já foi enviado"); 
+            return;
+        }
 
+        var novaLinha = document.createElement('tr');
         var cell1 = document.createElement('td');
         var cell2 = document.createElement('td');
         var cell3 = document.createElement('td');
@@ -276,24 +279,28 @@
         cell3.innerHTML = email;
         cell4.innerHTML = message;
 
-
         novaLinha.appendChild(cell1);
         novaLinha.appendChild(cell2);
         novaLinha.appendChild(cell3);
         novaLinha.appendChild(cell4);
 
-
         tabelaCorpo.appendChild(novaLinha);
-
 
         document.getElementById('first-name').value = '';
         document.getElementById('last-name').value = '';
         document.getElementById('email').value = '';
         document.getElementById('message').value = '';
-
     }
 
-    
+    function emailJaExistente(email, tabelaCorpo) {
+        for (var i = 0; i < tabelaCorpo.rows.length; i++) {
+            var emailExistente = tabelaCorpo.rows[i].cells[2].innerHTML;
+            if (emailExistente === email) {
+                return true;
+            }
+        }
+        return false;
+    }
 </script>
 
 </html>
