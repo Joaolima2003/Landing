@@ -158,21 +158,22 @@ tfoot td{
     border-bottom: 0.1rem solid rgb(180, 180, 180, 0.7);
 }
 
-.menu h1{
+
+.menu h1, .menuMobile h1{
     font-size: 2.3rem;
     color: var(--primary-color)
 }
 
-.menu h1 a{
+.menu h1 a, .menuMobile h1 a{
     color: inherit
 }
 
-.menu ul {
+.menu ul{
     list-style: none;
     display: flex;
 }
 
-.menu ul li a {
+.menu ul li a{
     display: block;
     padding: 2rem;
     font-size: 1.8rem;
@@ -180,7 +181,7 @@ tfoot td{
     position: relative;
   }
   
-.menu ul li a::after {
+.menu ul li a::after{
     content: '';
     position: absolute;
     bottom: 1rem;
@@ -195,6 +196,37 @@ tfoot td{
     width: 50%;
     left: 25%;
   }
+
+  #items, .sumir a{
+    display: none;
+  }
+
+  #items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#items ul li {
+    margin-right: 15px;
+}
+  #burguer{
+    display: none;
+}
+
+  #burguer{
+    background-color: gray;
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-align: end;
+    cursor: pointer;
+}
+#burguer:hover{
+    background-color: white;
+    color: black;
+}
 
 .top3-content{
     min-height: 100vh;
@@ -339,4 +371,14 @@ footer{
     .gallery-img img{
         width: 100%; 
     }
+}
+
+@media (max-width:955px){
+    .menu ul li, .sumir_text a{
+        display: none;
+    }
+    #burguer, .sumir a{
+        display: block;
+    }
+    
 }
