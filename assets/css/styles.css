@@ -197,9 +197,9 @@ tfoot td{
     left: 25%;
   }
 
-  #items, .sumir a{
+.sumir a{
     display: none;
-  }
+}
 
   #items ul {
     list-style: none;
@@ -379,6 +379,38 @@ footer{
     }
     #burguer, .sumir a{
         display: block;
+    }
+
+    
+    #items {
+        display: none;
+        background-color: #979797;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        z-index: 2;
+    }
+    
+    #items ul{
+        flex-direction: column;
+        font-size: 3.0rem;
+
+    }
+
+    #items ul li{
+        margin-bottom: 2rem;
+    }
+
+    #items ul li a {
+        color: var(--primary-color);
+    }
+
+    #items ul li a:hover {
+        color: aqua;
     }
     
 }
