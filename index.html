@@ -4,42 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Programation</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Novembro Azul</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" href="assets\img\novembro azul logo.png">
 </head>
 
 <body class="main-bg"> <!--Aside para rolar pela Página-->
     <aside class="menu white-bg">
         <div class="menu-content">
-            <h1 class="sumir_text"><a href="#home">Business Programation</a></h1>
+            <div class="bigode">
+                <img src="assets\img\Novembro azul logo.png" id="imagemlogo">
+                <h1 class="sumir_text"><a href="#home">Novembro <strong>Azul</strong></a></h1>
+
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#intro">Sobre</a></li>
-                    <li><a href="#grid-one">Linguagens</a></li>
+                    <li><a href="#intro">Doenças abordadas</a></li>
+                    <li><a href="#grid-one">Estágios</a></li>
                     <li><a href="#gallery">Inspirações</a></li>
-                    <li><a href="#grid-two">Dicas</a></li>
-                    <li><a href="#table">Mais+</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#grid-two">Prevenções</a></li>
+                    <li><a href="#table">Tratamentos</a></li>
+                    <li><a href="#contact">Mensagem</a></li>
                 </ul>
             </nav>
         </div>
     </aside>
     <aside class="menuMobile white-bg">
         <div class="menu-content">
-            <h1 class="sumir"><a href="#home">Business Programation</a></h1>
-            <span onclick="burguerClick()" id="burguer"class="material-symbols-outlined">
+            <h1 class="sumir"><a href="#home">Novembro <strong>Azul</strong></a></h1>
+            <span onclick="burguerClick()" id="burguer" class="material-symbols-outlined">
                 menu
             </span>
             <nav id="items">
                 <ul>
-                    <li><a href="#intro">Sobre</a></li>
-                    <li><a href="#grid-one">Linguagens</a></li>
+                    <li><a href="#intro">Doenças abordadas</a></li>
+                    <li><a href="#grid-one">Estágios</a></li>
                     <li><a href="#gallery">Inspirações</a></li>
-                    <li><a href="#grid-two">Dicas</a></li>
-                    <li><a href="#table">Mais+</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#grid-two">Prevenções</a></li>
+                    <li><a href="#table">Tratamentos</a></li>
+                    <li><a href="#contact">Mensagem</a></li>
                 </ul>
             </nav>
         </div>
@@ -48,162 +55,135 @@
     <section id="home" class="main-bg section">
         <div class="main-content intro-content">
             <div class="intro-elementos">
-                <h2>Bem vindos ao inicio do nosso primeiro site</h2>
-                <p>Essa parte da página é introdutória e foi usada flexbox e grid para organização dos items, espero que
-                    curtam, ele está num estilo de Landing-Page e com isso vamos caminhar na página usando os items do
-                    menu certo?</p>
+                <h2>O que é o Novembro Azul</h2>
+                <p>O Novembro Azul é uma campanha que alerta os homens sobre o câncer de próstata e outras doenças. A
+                    campanha começou na Austrália em 2003 e se espalhou pelo mundo. O símbolo é um bigode. A campanha
+                    incentiva os homens a fazerem exames, se informarem e se prevenirem. O objetivo é melhorar a saúde e
+                    a qualidade de vida dos homens</p>
             </div>
             <div class="intro-img">
-                <img src="assets\img\js.svg" alt="imagem de js,html e css">
+                <img src="assets\img\maofita.png" alt="imagem referente ao novembro azul">
             </div>
         </div>
     </section>
-    <section id="intro" class="white-bg section">
+    <section id="intro" class="november-bg section">
         <div class="main-content top3-content">
             <h2>
-                Sobre nossa página
+                Doenças abordadas
             </h2>
             <p>
-                Nosso site irá abrangir as principais linguagens de programação e apontar onde cada uma se encontra no
-                rank, além de mostrar novidades e noticias importantes para o mundo da programação, trazendo novidades e
-                riquezas em conhecimento.
-            </p>
-            <p>
-                Linguagem de Programação é uma linguagem escrita e formal que especifica um conjunto de instruções e
-                regras usadas para gerar programas (software). Um software pode ser desenvolvido para rodar em um
-                computador, dispositivo móvel ou em qualquer equipamento que permita sua execução.
-            </p>
-            <p>
-                Hoje, existem diversos tipos de linguagens de programação, as quais são escritas pelos programadores,
-                algumas dessas linguagens são compreendidas pelo computador e outras ajudam na forma de tradutores,
-                sendo elas: linguagem de máquinas, linguagens assembly, e linguagens de alto nível.
+                As doenças que são faladas no Novembro Azul são principalmente o câncer de próstata, que é o foco da
+                campanha, mas também outras doenças que podem afetar a saúde do homem, como doenças cardiovasculares,
+                diabetes, obesidade e tabagismo. Essas doenças podem aumentar o risco de desenvolver câncer de próstata
+                ou outras complicações, por isso é importante que os homens se cuidem e se previnam. O Novembro Azul é
+                uma forma de conscientizar os homens sobre a importância de fazer exames regulares, se alimentar bem,
+                praticar atividades físicas e evitar hábitos nocivos, como fumar e beber em excesso. Assim, eles podem
+                melhorar a sua qualidade de vida e evitar doenças que podem comprometer a sua saúde
             </p>
         </div>
     </section>
     <section id="grid-one" class="grid-one main-bg section">
         <div class="grid-one-content main-content">
-            <h2 class="grid-main-heading">Linguagens de programação</h2>
-            <p class="grid-description">Novidades sobre Python, JavaScript e Swift.</p>
+            <h2 class="grid-main-heading">Estágios do câncer de próstata</h2>
+            <p class="grid-description">São divididos em 3 estágios</p>
             <div class="grid">
                 <article>
-                    <h3>JavaScript</h3>
+                    <h3>Doença localizada</h3>
                     <p>
-                        JavaScript, juntamente com HTML e CSS, é a melhor linguagem de programação para aprender
-                        desenvolvimento web front-end. O JavaScript ES6+ trouxe uma série de recursos modernos que
-                        melhoraram significativamente a experiência de desenvolvimento dos programadores JavaScript. As
-                        arrow functions, classes, desestruturação e módulos são apenas algumas das novidades que tornam
-                        o código mais conciso, legível e eficiente.
+                        Quando o câncer está somente na próstata
                     </p>
                 </article>
                 <article>
-                    <h3>Python</h3>
+                    <h3>Doença localmente avançada</h3>
                     <p>
-                        Python é uma linguagem de programação de alto nível e para propósitos diversos. Uma das
-                        novidades mais notáveis do Python 3.10 é a adição do operador walrus, representado pelo símbolo
-                        de dois pontos seguido de igual (:=). Esse operador permite que uma expressão seja atribuída a
-                        uma variável enquanto é avaliada. Isso pode simplificar o código e torná-lo mais legível.
+                        Quando o câncer invade estruturas vizinhas
                     </p>
                 </article>
                 <article>
-                    <h3>Swift</h3>
+                    <h3>Doença disseminada</h3>
                     <p>
-                        A linguagem de programação Swift está entre uma das mais recentes a surgir no mercado.
-                        Inicialmente, quando foi lançada, a Swift era uma alternativa à Objective-C, a principal
-                        linguagem para produtos Apple. Se você tem experiência em linguagem de programação, pode
-                        aprender rapidamente o Swift e seus recursos avançados em 3-4 dias. Mas se você é novo no mundo
-                        da programação, precisará de 3 a 4 semanas para aprender o básico do Swift e alguns de seus
-                        recursos avançados
+                        Quando o câncer atinge órgãos à distância (metástases)
                     </p>
                 </article>
             </div>
         </div>
     </section>
-    <section id="gallery" class="grid-one white-bg section">
+    <section id="gallery" class="grid-one november-bg section">
         <div class="grid-one-content main-content">
             <h2 class="grid-main-heading">Inspirações</h2>
-            <p class="grid-description">Imagens para você se inspirar para codar! </p>
+            <p class="grid-description">Imagens para você se inspirar para superar! </p>
             <div class="grid">
                 <div class="gallery-img">
-                    <img src="https://source.unsplash.com/random/360x360?r=1" alt="imagens random">
+                    <img src="assets\img\inspiração1.png" alt="imagens random">
                 </div>
                 <div class="gallery-img">
-                    <img src="https://source.unsplash.com/random/360x360?r=2" alt="images random">
+                    <img src="assets\img\inspiraçao2.png" alt="images random">
                 </div>
                 <div class="gallery-img">
-                    <img src="https://source.unsplash.com/random/360x360?r=3" alt="images random">
+                    <img src="assets\img\inspiraçao3.png" alt="images random">
                 </div>
                 <div class="gallery-img">
-                    <img src="https://source.unsplash.com/random/360x360?r=4" alt="images random">
+                    <img src="assets\img\inspiraçao4.png" alt="images random">
                 </div>
                 <div class="gallery-img">
-                    <img src="https://source.unsplash.com/random/360x360?r=5" alt="images random">
+                    <img src="assets\img\inspiraçao5.png" alt="images random">
                 </div>
                 <div class="gallery-img">
-                    <img src="https://source.unsplash.com/random/360x360?r=6" alt="images random">
+                    <img src="assets\img\inspiraçao6.png" alt="images random">
                 </div>
             </div>
         </div>
     </section>
     <section id="grid-two" class="grid-one main-bg section">
         <div class="grid-one-content main-content">
-            <h2 class="grid-main-heading">Mais sobre programação (+)</h2>
-            <p class="grid-description">Novidades sobre Java, PHP, e C#.</p>
+            <h2 class="grid-main-heading">Prevenções</h2>
+            <p class="grid-description">Como evitar o câncer de próstata</p>
             <div class="grid">
                 <article>
-                    <h3>C#</h3>
+                    <h3>Alimentação</h3>
                     <p>
-                        C# é uma linguagem de programação orientada a objetos, um modelo que organiza o design de
-                        software ao redor de objetos. Basicamente podemos utilizar o C# em todo ecossistema Micrososft e
-                        dificilmente haverá um recurso a nível de linguagem que não esteja presente. Um dos seus usos
-                        mais comum é dentro do ASP.NET, a plataforma da Microsoft para criação de aplicações Web, mas
-                        seu uso não se restringe somente a isto.
+                        Ter uma alimentação saudável, rica em frutas e vegetais, que podem fornecer vitaminas, minerais,
+                        fibras e antioxidantes que protegem as células da próstata
                     </p>
                 </article>
                 <article>
-                    <h3>Java</h3>
+                    <h3>Peso</h3>
                     <p>
-                        Java é uma linguagem de programação exclusiva que pertence à Oracle. Trata-se de uma linguagem
-                        de programação de alto nível, ou seja, que mais se aproxima da linguagem humana. O Java 17 é o
-                        mais recente lançamento de Suporte de Longo Prazo (LTS). Anunciado em 13 de setembro de 2022, o
-                        lançamento trouxe diversas melhorias para essa linguagem, propiciando uma melhoria no
-                        desenvolvimento e desempenho do Java.
+                        Manter o peso corporal adequado, evitando a obesidade, que pode aumentar a inflamação e o risco
+                        de câncer de próstata
                     </p>
                 </article>
                 <article>
-                    <h3>PHP</h3>
+                    <h3>Atividade física</h3>
                     <p>
-                        PHP é uma das primeiras linguagens de programação back-end que os desenvolvedores consideram ser
-                        essencial aprender. Além disso, o PHP é utilizado por 78,1% de todos os sites na internet, já
-                        que é a linguagem primária do WordPress. Novembro está chegando, e com ele grandes novidades no
-                        ecossistema PHP! O PHP 8.2 traz otimizações de performance, mudanças na sintaxe da linguagem e
-                        funções utilitárias que vão tornar o desenvolvimento com PHP ainda mais prazeiroso!
+                        Praticar atividade física regularmente, pelo menos 150 minutos por semana, que pode melhorar a
+                        circulação, o metabolismo, o sistema imunológico e a qualidade de vida, além de reduzir o
+                        estresse e o risco de câncer de próstata
+
+
                     </p>
                 </article>
             </div>
         </div>
     </section>
-    <section id="table" class="white-bg section">
+    <section id="table" class="november-bg section">
         <div class="main-content top3-content">
             <section>
                 <h2>
-                    Tabela dos ranks
+                    Tratamentos
                 </h2>
-                <p>Se tratando de desenvolvimento web e desenvolvimento de softwares, as linguagens de programação mais
-                    usadas no mercado hoje em dia são Python, Java, JavaScript e C++. Aprender uma linguagem de
-                    programação pode trazer muitos benefícios, seja para iniciar uma carreira no ramo de tecnologia ou
-                    para melhorar suas habilidades em programação de sites e aplicações. Este aprendizado te ajuda a
-                    aperfeiçoar suas competências técnicas e de resolução de problemas, além de ajudar na busca por um
-                    emprego bem remunerado.</p>
+                <p>Cirurgia, que consiste na remoção da próstata e das vesículas seminais, podendo ser feita por via
+                    aberta, laparoscópica ou robótica. A cirurgia pode curar o câncer de próstata localizado, mas pode
+                    ter efeitos colaterais, como incontinência urinária e impotência sexual</p>
 
-                <p>Com mais de 700 opções de linguagens de programação para escolher, pode ser um desafio decidir qual
-                    delas aprender primeiro. Em última instância, esta escolha depende muito do que você está tentando
-                    construir através da programação. E para te ajudar a entender melhor suas opções, esta página vai
-                    resumir as principais características das 6 melhores linguagens de programação para aprender em
-                    2023.</p>
+                <p>Radioterapia, que utiliza radiação para destruir as células cancerígenas da próstata. A radioterapia
+                    pode ser externa ou interna (braquiterapia). A radioterapia pode ser usada para tratar o câncer de
+                    próstata localizado ou localmente avançado, mas também pode causar efeitos colaterais, como
+                    irritação na bexiga e no reto, disfunção erétil e fadiga</p>
             </section>
             <div class="table-responsive" id="table-responsive">
                 <table>
-                    <caption>Dados do Cadastro</caption>
+                    <caption>Avaliações</caption>
                     <thead>
                         <tr>
                             <th>Primeiro Nome</th>
@@ -227,18 +207,17 @@
         <div class="main-content intro-content">
             <div class="intro-elementos">
                 <h2>Obrigado por visitar nosso site!</h2>
-                <p>Logo abaixo se encontra uma caixa de texto disponivel para você nos enviar criticas e melhorias nas
-                    quais podemos nos atualizar e mantermos nosso site da melhor forma e mais atualizada para você, nos
-                    envie uma mensagem! :)</p>
+                <p>Logo abaixo se encontra uma caixa de texto disponivel para você possa deixar uma mensagem
+                 em nosso site para que você possa incentivar as pessoas se tratarem e previnirem contra o câncer de próstata!</p>
             </div>
             <div class="intro-img">
-                <img src="assets\img\css.svg" alt="imagem de js,html e css">
+                <img src="assets\img\novembro azul logo.png" alt="Simbolo novembro azul">
             </div>
         </div>
         <div class="contact-form" id="contact-form">
             <form action="">
                 <fieldset class="form-grid">
-                    <legend>Entre em contato conosco</legend>
+                    <legend>Mensagem </legend>
                     <div class="form-group">
                         <label for="first-name">Primeiro nome</label>
                         <input type="text" id="first-name" placeholder="Seu Primeiro Nome" required>
@@ -266,13 +245,28 @@
             </form>
         </div>
     </section>
-    <footer class="footer-bg">
-        <h6>
-            <a href="https://github.com/Joaolima2003" target="_blank">🧛 feito por João Paulo e Victor 🧛</a>
+    <footer>
+        <div>
+            <img src="assets\img\perfilmeu.jpg">
+            <h6>Pedro Vergeth</h6>
+            <a href="https://github.com/Pedro-Vergeth"> <img src="assets\img\github logo.png" class="github"></a>
+            
+        </div>
+        <div>
+            <img src="assets\img\perfiljp.jpg" id="ftjp">
+            <h6>João Paulo</h6>
+            <a href="https://github.com/Joaolima2003"> <img src="assets\img\github logo.png" class="github"></a>
+        </div>
+        <div>
+            <img src="assets\img\Screenshot 2023-11-30 010409.png">
+            <h6>Valmiran de Almeida</h6>
+            <a> <img src="assets\img\github logo.png" class="github"></a>
+        </div>
+
     </footer>
     <span id="backtotop" onclick="topFunction()" class="material-symbols-outlined">
         arrow_upward
-        </span>
+    </span>
 </body>
 <script>
     function adicionarNaTabela() {
@@ -284,7 +278,7 @@
         var tabelaCorpo = document.getElementById('tabela-corpo');
 
         if (emailJaExistente(email, tabelaCorpo)) {
-            alert("Email já foi enviado"); 
+            alert("Email já foi enviado");
             return;
         }
 
@@ -322,36 +316,36 @@
         return false;
     }
 
-    function burguerClick(){
-        if (items.style.display == "block"){
+    function burguerClick() {
+        if (items.style.display == "block") {
             items.style.display = "none";
         }
-        else{
+        else {
             items.style.display = "block";
         }
 
     }
 
-        var mybutton = document.getElementById("backtotop")
+    var mybutton = document.getElementById("backtotop")
 
-        window.onscroll = function(){
-            scrollFunction()
-        }
+    window.onscroll = function () {
+        scrollFunction()
+    }
 
-        function scrollFunction(){
-            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-                mybutton.style.display = "block";
-            }
-            else{
-                mybutton.style.display = "none";
-            }
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
         }
+        else {
+            mybutton.style.display = "none";
+        }
+    }
 
-        
-        function topFunction(){
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 </script>
 
 </html>
